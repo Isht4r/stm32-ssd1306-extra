@@ -156,6 +156,10 @@ typedef struct {
     const uint8_t *const char_width;    /**< Proportional character width in pixels (NULL for monospaced) */
 } SSD1306_Font_t;
 
+typedef struct {
+	uint8_t x, y;
+} Point_t;
+
 // Procedure definitions
 void ssd1306_Init(void);
 void ssd1306_Fill(SSD1306_COLOR color);
